@@ -1,29 +1,7 @@
-//
-// Created by PC on 11/23/2023.
-//
 
 #ifndef SDAT_SENSOR_H
 #define SDAT_SENSOR_H
 #include "Missile_Controls.h"
-class TemperatureSensor{
-public:
-    TemperatureSensor();
-    void generateData();
-    double getData() const;
-
-private:
-    double currentTemp;
-};
-
-class Humidity{
-public:
-    Humidity();
-    void generateData();
-    int getData() const;
-
-private:
-    int currentHumidity;
-};
 
 class Target_Coordinates{
 public:

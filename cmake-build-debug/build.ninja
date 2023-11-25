@@ -67,6 +67,18 @@ build CMakeFiles/SDAT.dir/Missile_Controls.cpp.obj: CXX_COMPILER__SDAT_unscanned
   OBJECT_DIR = CMakeFiles\SDAT.dir
   OBJECT_FILE_DIR = CMakeFiles\SDAT.dir
 
+build CMakeFiles/SDAT.dir/Data/TemperatureSensor.cpp.obj: CXX_COMPILER__SDAT_unscanned_Debug D$:/C_programs/SDAT/Data/TemperatureSensor.cpp || cmake_object_order_depends_target_SDAT
+  DEP_FILE = CMakeFiles\SDAT.dir\Data\TemperatureSensor.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SDAT.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDAT.dir\Data
+
+build CMakeFiles/SDAT.dir/Data/Humidity.cpp.obj: CXX_COMPILER__SDAT_unscanned_Debug D$:/C_programs/SDAT/Data/Humidity.cpp || cmake_object_order_depends_target_SDAT
+  DEP_FILE = CMakeFiles\SDAT.dir\Data\Humidity.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SDAT.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDAT.dir\Data
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SDAT
@@ -75,7 +87,7 @@ build CMakeFiles/SDAT.dir/Missile_Controls.cpp.obj: CXX_COMPILER__SDAT_unscanned
 #############################################
 # Link the executable SDAT.exe
 
-build SDAT.exe: CXX_EXECUTABLE_LINKER__SDAT_Debug CMakeFiles/SDAT.dir/main.cpp.obj CMakeFiles/SDAT.dir/Sensor.cpp.obj CMakeFiles/SDAT.dir/Missile_Controls.cpp.obj
+build SDAT.exe: CXX_EXECUTABLE_LINKER__SDAT_Debug CMakeFiles/SDAT.dir/main.cpp.obj CMakeFiles/SDAT.dir/Sensor.cpp.obj CMakeFiles/SDAT.dir/Missile_Controls.cpp.obj CMakeFiles/SDAT.dir/Data/TemperatureSensor.cpp.obj CMakeFiles/SDAT.dir/Data/Humidity.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SDAT.dir

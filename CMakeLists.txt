@@ -8,4 +8,8 @@ add_executable(SDAT main.cpp
         Missile_Controls.cpp
         Missile_Controls.h
         Sensor.h
+        Data/TemperatureSensor.cpp
+        Data/TemperatureSensor.h
+        Data/Humidity.cpp
+        Data/Humidity.h
 )

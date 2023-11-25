@@ -1,39 +1,8 @@
 #include <iostream>
-#include <vector>
 #include <random>
 #include "Missile_Controls.h"
 #include <thread>
 #include "Sensor.h"
-
-TemperatureSensor::TemperatureSensor() : currentTemp(0.0){}
-
-void TemperatureSensor::generateData(){
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<> dis(-20.0, 40.0);
-
-    currentTemp = dis(gen);
-}
-
-    double TemperatureSensor::getData() const{
-        return currentTemp;
-    }
-
-Humidity::Humidity() : currentHumidity(0){}
-
-void Humidity::generateData(){
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<> dis(0, 100);
-
-    currentHumidity = dis(gen);
-    }
-
-int Humidity::getData() const{
-    return currentHumidity;
-}
-
-
 
 Target_Coordinates::Target_Coordinates(double latitude, double longitude) {
         this -> latitude = latitude * M_PI / 180.0;  //Convert to radians
