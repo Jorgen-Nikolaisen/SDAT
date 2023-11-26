@@ -42,6 +42,10 @@ Motion::Motion(MissileControls isFlying, Target_Coordinates position) : isFlying
         this->missileVelocity = newMissileVelocity;
     }
 
+    double Motion::getVelocity() {
+    return this->missileVelocity;
+}
+
     double Motion::setBearing(double lat1, double lon1, double lat2, double lon2) {
     this -> lat1 = lat1 * M_PI / 180.0; // Convert to radians
     this-> lon1 = lon1* M_PI / 180.0;

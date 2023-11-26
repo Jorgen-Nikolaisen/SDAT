@@ -26,6 +26,7 @@ public:
     Motion(MissileControls isFlying, Target_Coordinates position);
 
     void setVelocity(double missileVelocity);
+    double getVelocity();
     double setBearing(double lat1, double lon1, double lat2, double lon2);
     void missileInMotion();
 };
