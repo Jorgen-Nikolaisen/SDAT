@@ -6,8 +6,7 @@
 class TemperatureSensor{
 public:
     TemperatureSensor();
-    void generateData();
-    double getData() const;
+    double getTemperature(double latitude, double longitude);
 
 private:
     double currentTemp;
